@@ -1,0 +1,7 @@
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "ktt-rg"
+    container_name       = "tfstate"
+    key                  = "vm.tfstate"
+  }
+}
